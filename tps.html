@@ -1,0 +1,12 @@
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+setInterval(function(){
+  $.ajax({
+    url:"mc.22b22t.tk",
+    success:function(tps){
+      $('body').html("TPS = " + tps);
+      console.log(tps);
+    }
+  });
+}, 1000);
+</script>
